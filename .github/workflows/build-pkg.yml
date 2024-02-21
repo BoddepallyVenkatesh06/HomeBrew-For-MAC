@@ -157,7 +157,7 @@ jobs:
           fi
 
       - name: Upload installer to GitHub Actions
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: Homebrew ${{ steps.print-version.outputs.version }}
           path: Homebrew-${{ steps.print-version.outputs.version }}.pkg
